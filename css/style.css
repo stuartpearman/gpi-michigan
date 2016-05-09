@@ -1,0 +1,128 @@
+body {
+  font-family: avenir, sans-serif;
+  color: #333;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  font-family: arial-black, sans-serif;
+  font-weight: 900;
+}
+
+section.icons h3 {
+  text-align: center;
+}
+
+section.icons h3 .glyphicon {
+  display: block;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+p, li {
+  font-size: 1.2em;
+}
+
+header {
+  overflow: hidden;
+}
+
+header.homepage-banner {
+  background: url("../images/banner-template.jpg") fixed;
+  background-size: 1440px;
+  padding-top: 30px;
+}
+
+nav.navbar {
+  margin-bottom: 0;
+  background: #fff;
+  /*border-top: 1px solid #ddd;*/
+  border-bottom: 1px solid #ddd;
+}
+
+nav.navbar li a {
+  padding: 10px 15px 8px 15px;
+  line-height: 55px;
+}
+
+nav.navbar .navbar-brand {
+  height: auto;
+  padding: 10px 15px 8px 15px;
+}
+
+nav.navbar .navbar-toggle {
+  margin-top: 20px;
+}
+
+nav.navbar li.logo-image a:hover {
+  background: none;
+}
+
+ul.nav li a {
+  color: #0ac;
+  font-weight: bold;
+}
+
+header p {
+  font-size: 1.4em;
+}
+
+.card {
+  padding: 20px;
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0px 0 1px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.card-heading h1 {
+  padding: 20px;
+  display: inline-block;
+  background: #0ac;
+  color: #fff;
+}
+
+section.special {
+  background: rgba(0,170,204,1);
+  color: #fff
+}
+
+section:last-child {
+  padding-bottom: 30px;
+}
+
+section, footer {
+  padding: 20px 0;
+}
+
+footer {
+  background: #333;
+  color: #ddd;
+  padding: 20px 0;
+}
+
+/*--- PAGES ---*/
+
+.page-header {
+  margin-bottom: 0;
+  color: #0ac;
+  border-bottom: 0;
+}
+
+/*---  HELPERS  ---*/
+
+.btn {
+  margin: 10px 0 0 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.btn-brand {
+
+  color: #0ac;
+  border: 1px solid #0ac;
+}
+
+.btn-brand:hover {
+  background: #0ac;
+  color: #fff;
+}
