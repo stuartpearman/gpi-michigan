@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
     <title>Small Business Template</title>
-    <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/style.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
     <header class="homepage-banner">
