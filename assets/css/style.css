@@ -9,6 +9,10 @@ h1, h2, h3 {
   font-weight: 900;
 }
 
+a {
+  color: #0ac;
+}
+
 section.icons h3 {
   text-align: center;
 }
@@ -41,13 +45,17 @@ nav.navbar {
 }
 
 nav.navbar li a {
-  padding: 10px 15px 8px 15px;
-  line-height: 55px;
+  padding: 17px 15px 13px 15px;
+  line-height: 45px;
 }
 
 nav.navbar .navbar-brand {
   height: auto;
-  padding: 10px 15px 8px 15px;
+  padding: 15px;
+}
+
+.navbar-brand img {
+  height: 45px;
 }
 
 nav.navbar .navbar-toggle {
@@ -81,9 +89,18 @@ header p {
   color: #fff;
 }
 
+section {
+  border-top: 1px solid #ddd;
+}
+
+section:first-child {
+  border: 0;
+}
+
 section.special {
   background: rgba(0,170,204,1);
-  color: #fff
+  color: #fff;
+  border: 0;
 }
 
 section:last-child {
@@ -109,6 +126,14 @@ footer {
 }
 
 /*---  HELPERS  ---*/
+
+img.alignleft {
+  float: left;
+}
+
+img.alignright {
+  float: right;
+}
 
 .btn {
   margin: 10px 0 0 0;
