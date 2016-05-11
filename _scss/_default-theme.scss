@@ -1,0 +1,178 @@
+@import "_variables.scss";
+
+body {
+  font-family: avenir, sans-serif;
+  color: #333;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0px;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+a {
+  color: $brand-primary;
+}
+
+p, li {
+  font-size: 1.3em;
+}
+
+//---- Header & Banner ----//
+
+header {
+  overflow: hidden;
+
+  &.homepage-banner {
+    background: url("../images/banner-template.jpg") fixed;
+    background-size: 1440px;
+    padding-top: 30px;
+  }
+  p {
+    font-size: 1.4em;
+  }
+  .card {
+    padding: 20px;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0px 0 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  .card-heading h1 {
+    padding: 20px;
+    display: inline-block;
+    background: $brand-primary;
+    color: #fff;
+  }
+}
+
+//---- Footer ----//
+
+footer {
+  background: #222;
+  color: #999;
+  padding: 20px 0;
+  &.sticky-footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+  h2 {
+    margin-bottom: 15px;
+  }
+  .glyphicon {
+    font-size: 0.8em;
+  }
+}
+
+//---- Navbar ----//
+
+nav.navbar {
+  margin-bottom: 0;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+
+  li a {
+    padding: 17px 15px 13px 15px;
+    line-height: 45px;
+  }
+  .navbar-brand {
+    height: auto;
+    padding: 15px;
+    img {
+      height: 45px;
+    }
+  }
+  .navbar-toggle {
+    margin-top: 20px;
+  }
+  ul.nav li a {
+    color: $brand-primary;
+    font-weight: bold;
+  }
+}
+//---- Content Sections ----//
+
+section {
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+  h1, h2, h3 {
+    font-size: 1.8em;
+    font-family: sans-serif;
+  }
+  h2.section-heading {
+    font-size: 2.3em;
+    color: #222;
+    font-family: 'Roboto Slab', sans-serif;
+    margin-bottom: 16px;
+  }
+  &:first-child {
+    border: 0;
+  }
+  &:last-child {
+    padding-bottom: 30px;
+  }
+  &.three-column .row {
+    h1, h3, h2 {
+      font-family: 'Roboto Slab', sans-serif;
+      text-align: center;
+    }
+    .glyphicon {
+      display: block;
+      text-align: center;
+      font-size: 5.0em;
+      margin: 35px 0 25px 0;
+    }
+  }
+
+  &.special {
+    background: $brand-primary;
+    color: #fff;
+    border: 0;
+  }
+}
+
+/*--- PAGES ---*/
+
+.page-header {
+  margin-top: 8px;
+  margin-bottom: 0;
+  color: $brand-primary;
+  border-bottom: 0;
+}
+
+/*---  HELPERS  ---*/
+
+img.alignleft {
+  float: left;
+}
+
+img.alignright {
+  float: right;
+}
+
+.btn {
+  margin: 10px 0 0 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.btn-brand {
+  color: $brand-primary;
+  border: 1px solid $brand-primary;
+}
+
+.special .btn-brand {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.btn-brand:hover {
+  background: $brand-primary;
+  color: #fff;
+}

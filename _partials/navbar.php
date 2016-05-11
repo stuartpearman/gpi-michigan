@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
       </button>
       <a href="/" class="navbar-brand">
-        <img src="http://vignette3.wikia.nocookie.net/logopedia/images/d/d9/NICK_Splat_Logo.png/revision/latest?cb=20111007092753">
+        <img src="https://s.w.org/about/images/logos/wordpress-logo-simplified-rgb.png">
       </a>
     </div>
     <div class="navbar-collapse collapse">
