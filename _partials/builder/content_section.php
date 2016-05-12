@@ -27,11 +27,7 @@
         <h2 class='section-heading'><?php the_title(); ?></h2>
         <?php the_content(); ?>
       <?php endif; ?>
-      <?php if (current_user_can('edit_posts')) : ?>
-        <a href="<?php echo get_edit_post_link(); ?>" class="btn btn-brand">
-          <span class="glyphicon glyphicon-edit"></span> Edit Content
-        </a>
-      <?php endif; ?>
+      <?php get_template_part('_partials/helpers/edit_content_button'); ?>
     </div>
   </section>
 <?php

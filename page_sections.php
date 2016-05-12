@@ -10,7 +10,7 @@ Template Name: Page Section
   <div class="container page-header">
     <h1><?php the_title(); ?></h1>
   </div>
-  <?php get_template_part('_partials/page_section'); ?>
+  <?php get_template_part('_partials/builder/content_section'); ?>
 </main>
 
 <?php get_footer(); ?>

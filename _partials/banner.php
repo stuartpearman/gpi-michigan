@@ -1,6 +1,5 @@
 <?php
   global $post;
-  $banner = array_values(children_of_parent_page('Homepage'))[0];
   setup_postdata($post);
 ?>
 
@@ -11,10 +10,8 @@
     </div>
     <div class="row card">
       <?php the_content(); ?>
-      <a href="#">
-        <div class="btn btn-brand">
-          Call to Action
-        </div>
+      <a href="http://interknights.co" target="blank" class="btn btn-brand">
+        Also check out Interknights!
       </a>
     </div>
   </div>
