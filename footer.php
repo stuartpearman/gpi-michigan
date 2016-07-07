@@ -1,6 +1,6 @@
     <footer>
       <div class="container">
-        <h2>We desperately need friends</h2>
+        <h2>Contact Us</h2>
         <p>
           <span class="glyphicon glyphicon-envelope"></span> email@thisdomain.com
         </p>

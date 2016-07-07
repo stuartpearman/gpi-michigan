@@ -10,9 +10,6 @@
     </div>
     <div class="row card">
       <?php the_content(); ?>
-      <a href="http://interknights.co" target="blank" class="btn btn-brand">
-        Also check out Interknights!
-      </a>
     </div>
   </div>
 </div>
