@@ -158,6 +158,35 @@ section {
   }
 }
 
+/*--- Testimonials ---*/
+.testimonials {
+  padding-top: 40px;
+  p {
+    text-align: center;
+  }
+}
+.testimonial-author {
+  text-align: center;
+  font-size: 1.4em;
+  color: #999;
+}
+.testimonial-image-container {
+  text-align: center;
+}
+.testimonial-image {
+  border: 3px solid #ddd;
+  padding: 4px;
+  width: 135px;
+  border-radius: 150px;
+}
+.quotation-mark {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  font-size: 300px;
+  margin-top: -90px;
+  margin-bottom: -220px;
+}
+
 /*--- BLOG ---*/
 
 section.blogfeed {
