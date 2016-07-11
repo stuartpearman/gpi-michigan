@@ -156,6 +156,16 @@ section {
       font-weight: bold;
     }
   }
+  img[class*="wp-image-"]{
+    margin: 25px;
+    margin-top: 10px;
+    &.alignleft {
+      margin-left: 0px;
+    }
+    &.alignright {
+      margin-right: 0px;
+    }
+  }
 }
 
 /*--- Testimonials ---*/
@@ -203,10 +213,15 @@ section.blogfeed {
 /*--- PAGES ---*/
 
 .page-header {
-  margin-top: 8px;
-  margin-bottom: 0;
-  color: $brand-primary;
-  border-bottom: 0;
+margin-top: 0px;
+margin-bottom: 40px;
+font-size: 2.2em;
+  h1{
+    font-weight: 200;
+  }
+}
+.article-body{
+  margin-bottom: 30px;
 }
 
 /*---  HELPERS  ---*/

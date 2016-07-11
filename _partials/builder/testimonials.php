@@ -1,7 +1,7 @@
 <?php $image = get_field('testimonial_image');
   if (!empty($image)) : ?>
   <div class="testimonial-image-container">
-    <img src="<?php echo $image[url] ?>" alt="<?php echo $image[alt] ?>" class="testimonial-image" />
+    <img src="<?php echo $image['sizes']['thumbnail'] ?>" alt="<?php echo $image[alt] ?>" class="testimonial-image" />
   </div>
 <?php else : ?>
   <div class="quotation-mark">
