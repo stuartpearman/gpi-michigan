@@ -12,6 +12,40 @@ function children_of_parent_page($parent_title){ //Takes the title of parent pag
   return $page_children; //outputs an array of child page objects
 }
 
+add_theme_support( 'custom-logo' );
+
+add_filter( 'get_custom_logo', 'change_logo_class' );
+
+function change_logo_class( $html ) {
+    $html = str_replace( 'class="custom-logo-link"', 'class="navbar-brand"', $html );
+    $html = preg_replace( '/(width|height)=\"\d*\"\s/', "", $html );
+    return $html;
+}
+
+function mytheme_customize_register( $wp_customize ) {
+  $wp_customize->add_section( 'bwpy_theme_colors', array(
+  	'title' => __( 'Theme Colors', 'bwpy' ),
+  	'priority' => 100,
+  ) );
+
+  // add color picker setting
+  $wp_customize->add_setting( 'primary_color', array(
+  	'default' => '#ff0000',
+    'type'    => 'option'
+  ) );
+
+  // add color picker control
+  $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'link_color', array(
+  	'label' => 'Brand Primary',
+  	'section' => 'bwpy_theme_colors',
+  	'settings' => 'primary_color',
+  ) ) );
+}
+
+add_action( 'customize_register', 'mytheme_customize_register' );
+
 require_once get_template_directory() . '/lib/plugin_require.php';
+
+
 
 ?>

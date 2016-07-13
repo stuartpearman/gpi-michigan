@@ -7,6 +7,7 @@
     $row_style = get_field('row_style');
 ?>
   <section class='<?php echo $row_style ?>' id='section_<?php echo $counter ?>'>
+    <h1><?php echo get_theme_mod( 'link_color' ) ?></h1>
     <div class="container">
       <?php if ($row_style == 'three-column special') : ?>
         <?php get_template_part('_partials/builder/three_column') ?>
