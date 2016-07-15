@@ -2,13 +2,13 @@
 
 body {
   color: #333;
-  font-family: 'Raleway', sans-serif;
+  font-family: $body-font;
 }
 
 h1, h2, h3 {
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
+  // text-transform: uppercase;
+  font-family: $heading-font;
+  font-weight: 200;
   letter-spacing: 0px;
 }
 
@@ -66,7 +66,8 @@ header {
 footer {
   background: #f6f6f6;
   color: #555;
-  padding: 20px 0;
+  padding: 0;
+  position: relative;
 
   &.sticky-footer {
     width: 100%;
@@ -76,11 +77,23 @@ footer {
   h2 {
     margin-bottom: 15px;
     color: $brand-primary;
-    font-weight: 200;
+    font-weight: 400;
     text-align: left;
   }
   .glyphicon {
     font-size: 0.8em;
+  }
+  .map-overlay {
+    max-width: 440px;
+    width: 60%;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    position: absolute;
+    display: inline-block;
+    right: 80px;
+    top: 40px;
+    z-index: 10;
   }
 }
 
@@ -118,12 +131,15 @@ section {
 
   h1, h2, h3 {
     font-size: 1.8em;
-    font-weight: 200;
+    font-weight: 600;
   }
   h2.section-heading {
-    font-size: 2.3em;
+    font-weight: 100;
+    font-size: 3em;
     color: #222;
-    margin-bottom: 16px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    // text-transform: uppercase;
   }
   &:first-child {
     border: 0;
@@ -136,7 +152,6 @@ section {
       text-align: center;
     }
     h1, h3, h2 {
-
       text-align: center;
     }
     .glyphicon {
@@ -153,7 +168,6 @@ section {
     border: 0;
     h2{
       color: #fff;
-      font-weight: bold;
     }
   }
   img[class*="wp-image-"]{
@@ -190,7 +204,7 @@ section {
   border-radius: 150px;
 }
 .quotation-mark {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto Slab', serif;
   text-align: center;
   font-size: 300px;
   margin-top: -90px;
@@ -253,4 +267,72 @@ img.alignright {
 .btn-brand:hover {
   background: $brand-primary;
   color: #fff;
+}
+
+// Social Links
+
+.social-links {
+  padding-top: 8px;
+  a {
+    position: relative;
+    top: 3px;
+    margin-left: 12px;
+    border: 1px solid $brand-primary;
+    color: $brand-primary;
+    height: 31px;
+    width: 31px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    border-radius: 20px;
+    &:hover {
+      background: $brand-primary;
+      border-color: #fff;
+      color: #fff;
+    }
+  }
+  a:first-child {
+    margin-left: 12px;
+  }
+  .fa {
+    font-size: 1.1em;
+  }
+}
+
+.contact {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  .fa.fa-envelope {
+    font-size: 0.9em;
+    margin-right: 6px;
+  }
+}
+
+.btn.btn-sm {
+  padding: 3px 6px;
+  font-size: 16px;
+}
+
+button.btn.btn-brand {
+  background: #fff;
+  &:hover {
+    background: $brand-primary
+  }
+  .fa {
+    margin-right: 6px;
+  }
+}
+
+#copyEmail {
+  position: relative;
+  bottom: 4px;
+  margin-left: 6px;
+}
+
+#copyTarget {
+  position: fixed;
+  left: -9999px;
 }

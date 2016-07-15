@@ -31,4 +31,7 @@
   .btn-brand:hover {
     background: <?php echo $link_color ?>;
   }
+  .three-column.default .glyphicon {
+    color: <?php echo $link_color; ?>;
+  }
 </style>

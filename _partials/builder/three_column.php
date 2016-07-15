@@ -1,6 +1,7 @@
 
 
 <div class="row">
+  <h2 class="section-heading"><?php the_title() ?></h2>
   <div class="col-md-4">
     <span class="glyphicon glyphicon-<?php echo get_field('icon_1') ?>"></span>
     <?php the_content(); ?>

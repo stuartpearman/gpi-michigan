@@ -35,7 +35,7 @@ function mytheme_customize_register( $wp_customize ) {
   ) );
 
   // add color picker control
-  $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'link_color', array(
+  $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'primary_color', array(
   	'label' => 'Brand Primary',
   	'section' => 'bwpy_theme_colors',
   	'settings' => 'primary_color',

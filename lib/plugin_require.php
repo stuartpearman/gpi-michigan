@@ -49,6 +49,12 @@ function stuartpearman_register_required_plugins() {
 			'slug'      		   => 'advanced-custom-fields',
 			'required'  			 => true,
 			'force_activation' => true
+		),
+		array(
+			'name'      			 => 'Snazzy Maps',
+			'slug'      		   => 'snazzy-maps',
+			'required'  			 => true,
+			'force_activation' => true
 		)
 
 		// This is an example of how to include a plugin bundled with a theme.

@@ -5,7 +5,11 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900,300italic,400italic,500italic,700italic|Quicksand:400,300,700|Comfortaa:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Trirong:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900,300italic,400italic,500italic,700italic|Quicksand:400,300,700|Comfortaa:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Trirong:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -5871,12 +5875,11 @@ button.close {
 /*# sourceMappingURL=bootstrap-theme.min.css.map */
 body {
   color: #333;
-  font-family: 'Raleway', sans-serif; }
+  font-family: "Raleway", sans-serif; }
 
 h1, h2, h3 {
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
   letter-spacing: 0px; }
 
 h1 {
@@ -5918,7 +5921,8 @@ header {
 footer {
   background: #f6f6f6;
   color: #555;
-  padding: 20px 0; }
+  padding: 0;
+  position: relative; }
   footer.sticky-footer {
     width: 100%;
     position: fixed;
@@ -5926,10 +5930,21 @@ footer {
   footer h2 {
     margin-bottom: 15px;
     color: #1e7d4b;
-    font-weight: 200;
+    font-weight: 400;
     text-align: left; }
   footer .glyphicon {
     font-size: 0.8em; }
+  footer .map-overlay {
+    max-width: 440px;
+    width: 60%;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    position: absolute;
+    display: inline-block;
+    right: 80px;
+    top: 40px;
+    z-index: 10; }
 
 nav.navbar {
   background: #fff;
@@ -5954,11 +5969,13 @@ section {
   border-top: 1px solid #ddd; }
   section h1, section h2, section h3 {
     font-size: 1.8em;
-    font-weight: 200; }
+    font-weight: 600; }
   section h2.section-heading {
-    font-size: 2.3em;
+    font-weight: 100;
+    font-size: 3em;
     color: #222;
-    margin-bottom: 16px; }
+    padding-bottom: 20px;
+    margin-bottom: 20px; }
   section:first-child {
     border: 0; }
   section:last-child {
@@ -5977,8 +5994,7 @@ section {
     color: #fff;
     border: 0; }
     section.special h2 {
-      color: #fff;
-      font-weight: bold; }
+      color: #fff; }
   section img[class*="wp-image-"] {
     margin: 25px;
     margin-top: 10px; }
@@ -6008,7 +6024,7 @@ section {
   border-radius: 150px; }
 
 .quotation-mark {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto Slab', serif;
   text-align: center;
   font-size: 300px;
   margin-top: -90px;
@@ -6055,6 +6071,58 @@ img.alignright {
 .btn-brand:hover {
   background: #1e7d4b;
   color: #fff; }
+
+.social-links {
+  padding-top: 8px; }
+  .social-links a {
+    position: relative;
+    top: 3px;
+    margin-left: 12px;
+    border: 1px solid #1e7d4b;
+    color: #1e7d4b;
+    height: 31px;
+    width: 31px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 4px;
+    padding-bottom: 2px;
+    border-radius: 20px; }
+    .social-links a:hover {
+      background: #1e7d4b;
+      border-color: #fff;
+      color: #fff; }
+  .social-links a:first-child {
+    margin-left: 12px; }
+  .social-links .fa {
+    font-size: 1.1em; }
+
+.contact ul {
+  list-style: none;
+  padding: 0; }
+
+.contact .fa.fa-envelope {
+  font-size: 0.9em;
+  margin-right: 6px; }
+
+.btn.btn-sm {
+  padding: 3px 6px;
+  font-size: 16px; }
+
+button.btn.btn-brand {
+  background: #fff; }
+  button.btn.btn-brand:hover {
+    background: #1e7d4b; }
+  button.btn.btn-brand .fa {
+    margin-right: 6px; }
+
+#copyEmail {
+  position: relative;
+  bottom: 4px;
+  margin-left: 6px; }
+
+#copyTarget {
+  position: fixed;
+  left: -9999px; }
 
 .slide {
   position: relative;
